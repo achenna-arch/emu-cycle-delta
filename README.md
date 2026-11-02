@@ -1,8 +1,12 @@
 # Instruction-count deltas against cycle deltas on a Cortex-M4
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23882109.svg)](https://doi.org/10.5281/zenodo.23882109)
+
 Replication package of the article *Blind to Layout: Do Instruction-Count Deltas Predict Cycle Deltas for RTOS Kernel Commits on a Cortex-M4?* (under review).
 
 The study runs the same Zephyr kernel benchmark image on an nRF52840 DK board of FIT IoT-LAB, where the DWT counter gives cycles, and in Renode 1.17.0, where the same register gives executed instructions. It compares the two deltas between parent and child commits for 17 kernel operations, uses padding shifts and link-time placebos to separate the effect of the code from the effect of layout, and checks QEMU 10.0.2 in icount mode against Renode.
+
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23882109 (all versions); version v1.1 is https://doi.org/10.5281/zenodo.23882110.
 
 ## Contents
 
