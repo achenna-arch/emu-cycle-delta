@@ -1,0 +1,14 @@
+n 476
+changed 54
+renode_zero_share 0.7407407407407407
+c1_sign_agreement (0.2037037037037037, np.float64(0.038461538461538464), np.float64(0.34285714285714286))
+c2_spearman (0.3067372913092646, np.float64(-0.2883184519089059), np.float64(0.5993704996847893))
+moved_built 22
+c3_false_alarm_built (0.0, np.float64(0.0), np.float64(0.0))
+c4_miss_built (0.6818181818181818, np.float64(0.37301136363636367), np.float64(1.0))
+moved_code 7
+c3_false_alarm_code (0.14285714285714285, np.float64(0.0), np.float64(1.0))
+c4_miss_code (0.14285714285714285, np.float64(0.0), np.float64(1.0))
+c1_sign_code (0.8571428571428571, np.float64(0.0), np.float64(1.0))
+c5_layout_share (0.6470588235294118, np.float64(0.5294117647058824), np.float64(0.7058823529411765))
+negative_control 0.0

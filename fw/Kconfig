@@ -1,0 +1,33 @@
+mainmenu "Kernel latency probes"
+
+config BENCH_SAMPLES
+	int "Samples per operation"
+	default 1000
+
+config BENCH_ROUNDS
+	int "Full suite repetitions per boot"
+	default 5
+
+config BENCH_PAD_BYTES
+	int "Padding placed ahead of the kernel text, in bytes"
+	default 0
+	help
+	  Shifts the kernel without changing its instructions.
+	  Must be a multiple of 4, the alignment of its functions.
+
+config BENCH_TAG
+	string "Build label printed in the log"
+	default "unset"
+
+config BENCH_SW_IRQ
+	int "Spare NVIC line pended by the interrupt probes"
+	default 20
+	help
+	  Line 20 is SWI0_EGU0 on nRF52840, unused by this image.
+
+config BENCH_CMSDK_TIMER
+	bool "Read the MPS2 timer instead of CYCCNT"
+	help
+	  For QEMU, which models no DWT.
+
+source "Kconfig.zephyr"

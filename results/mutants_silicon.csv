@@ -1,0 +1,17 @@
+kind,n,op,added
+alu,4,sem.give,4.0
+alu,8,sem.give,8.0
+alu,16,sem.give,16.0
+alu,32,sem.give,32.0
+load,4,sem.give,5.0
+load,8,sem.give,9.0
+load,16,sem.give,17.0
+load,32,sem.give,33.0
+alu,4,sem.wake,3.75
+alu,8,sem.wake,7.25
+alu,16,sem.wake,13.0
+alu,32,sem.wake,39.5
+load,4,sem.wake,4.75
+load,8,sem.wake,10.25
+load,16,sem.wake,17.0
+load,32,sem.wake,43.5

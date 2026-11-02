@@ -1,0 +1,9 @@
+tag,rank,section,gap
+smoke,1,.text.event_walk_op,10
+smoke,2,.text.reschedule_locked,4
+smoke,3,.text.k_is_in_isr,2
+smoke,4,.text.z_thread_malloc,10
+smoke,5,.text.z_sched_lock_reschedule,4
+smoke,6,.text.z_add_timeout,14
+smoke,7,.text.z_impl_k_msgq_put,2
+smoke,8,.text.elapsed,14

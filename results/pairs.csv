@@ -1,0 +1,328 @@
+pair,stratum,selected,child,parent,subject
+A000,A,1,cf6d9d8fa8c93bbb117413a7a6021e63443868d9,387b387479edbd1be39c498b9194ff87d83424b1,kernel: wait_q: add z_unpend_first_thread_locked() and migrate callers
+A001,A,1,414c3cdeaf499cbbb32998759cd9821bac12be83,59cf34bf212eeb5c7ea88b97e15842b1e7c1a6b7,kernel: timeout: remove the dticks-based cancel mechanism
+A002,A,1,09a0cd7896008c6b9e09db4372ad6f91fd279fee,abfc798abd0ede89ad6f414efdc28d6561e897a9,kernel: events: honor reset for zero wait masks
+A003,A,1,23040b6b555fa69bf769b1707e2b3c3a71cedc13,9e7018846b85bfc3787338ccb57713a5c10c1d2d,kernel: Inline z_sched_wake()
+A004,A,1,f32e042fa5d22b7731d3a173a9e92ba5c12893e7,a3a341406db7e3c264c06b3f8b2ad29bb17b49ec,kernel: update the message queue ring before copying the payload
+A005,A,1,940aaaed2acc8d390e3f32439f1a83ac200bc6fb,4defbbeecd4439c96dcbd83fd2dd38b0ae75aafb,kernel: fatal: add arch hook pair for IRQ management during coredump
+A006,A,1,4b525273bf64bb07c3e067177d2f2bd3e4cd9bc1,fc11a9166eee7465381ac27433c7f8b42df3dc6a,kernel: sched: simplify thread_runq()
+A007,A,1,d7721afeaae25b851671b02135bf26d2dabd62c2,3308d069ae0c0a2888d7228b98de4e775ca05864,kernel: spinlock: pass the incoming thread to the ownership transfer
+A008,A,1,805b2af18ef458c9309a9424c2a3b2936ba6171f,1ab9ae5c14889d6cd2853bf966a0444674e8e32e,kernel: timeout: introduce z_try_abort_timeout() with in-flight tracking
+A009,A,1,669b12f804d7df717d50de88a7aaa7754215312b,bfe8a9f2989df2ad711a893bfa439c5eb922c695,kernel: sched: don't read _current back after set_current()
+A010,A,1,05cbc7c98a7c5c8edaaa1416ca0050959297b9a8,28f157beaeb9a94277f985647beb8442d1e3a22b,kernel: sched: extract timeslice declarations to timeslicing.h
+A011,A,1,4d042d31032715e89299c6d52983665d213d060a,84e82eae4c738639bbde7770ea307d2ad8ef2a26,kernel: add configurable striped semaphore locking
+A012,A,1,5c30e858ecc174c7e947d8a42ea8768f7d70c529,1e1332cf7b35d7ba787b259c5b7f82e1c3045dff,kernel: obj_core: unregister objects the kernel releases
+A013,A,1,40b8ee1f11045e5c322f03f6a6369c7bb5ab710a,3c6fa908cbdd831b0b2918da853834a61eb38034,kernel: Remove redundant K_FOREVER timeout check from thread schedule
+A014,A,1,2f58de062669fb91a9fda5a89ab3b453b07623b7,8dbe9770901a8321f5399512ab0d8cfd1fcd87fe,kernel: stack: move BLOCKING trace to after K_NO_WAIT check in k_stack_pop
+A015,A,1,4c1730872548bfb054bbc8fb630ee61abcee6153,24a8c0b4830d5926b2010de4b64f4db108d8ae8d,kernel: move the SMP scheduler paths behind hooks in ksmp.h
+A016,A,1,374352fef297674ec65ef50117ba8ef303f59367,1a53affccab30fd90d16b41b71a2ac439d781b34,kernel: stack: fix allocation size overflow
+A017,A,1,c605ea46e15fb9bdd518670258a8a52d8850d8f4,b6d1d04653bd856cb6fefcf9bd7a4a75fbbde701,kernel: thread monitor - Assert reusing TCB in use
+A018,A,1,1c47cb6eb4e13088ee65624560ccf1638fbe01b2,76fdc91c5508e3d00ba53b460ba02c1947527f71,kernel: thread: factor z_setup_new_thread config blocks into helpers
+A019,A,1,69824a8eb42c4057d6b146dafd71579fe6426b4b,0f7b0ba0f1044954aa39bf848725e09553d1a23e,kernel: fix abbreviated stack safety check with stack sentinel
+A020,A,1,908169d9df4d0b9d1bc371df9bfad12ea91e5f8c,0659dc18b3bd8d3bb23c57059edddb51b7fa458f,kernel: deadline: move deadline handling to own file
+A021,A,1,c21850fdd66ea775580257cdf57259e0f3da6669,aec25bce220efe95c726d6b24bf8b0880cde9d56,arch: change arch_mem_unmap() to return an error code
+A022,A,1,2d6bdab5dc038881052ec2804e38713160782be9,729110c12fec2cf1843e39f19f88a86c7c676513,arch/riscv: fix early TLS setup and save callee-saved registers
+A023,A,1,5c6c6837cc4026a70e670c265fc4d1e3b1f16379,b04513ce96c617a63f52ecd79d5f3899461471c3,kernel: fix k_condvar_wait mutex re-acquisition on timeout
+A024,A,0,ce9584adf799ae08f23a98b0c26ebe022c21ec66,cfb9ad7d7b2e2aea02483a70efd769076f7593fc,kernel: thread: integrate object core via K_OBJ_TYPE_DEFINE
+A025,A,0,f94efe2607e617ea9c380d9f315051d8aa9c2997,2d6bdab5dc038881052ec2804e38713160782be9,arch: riscv: address review nits on TLS canary patches
+A026,A,0,1e265cf776328c4c97534fd9a59b1812a2179a15,9a27e2e135af9656dd9133fe49851d141c6f994b,kernel: kheap: keep static heap init as a PRE_KERNEL_1 SYS_INIT
+A027,A,0,a811b0f1cd51f34a0f86c4a0efb60ae69addbf05,3d1e24b56b61d2de2924d9772470cec38e4d59ef,arch: arm: cortex_m: drop redundant ISBs from IRQ lock and unlock
+A028,A,0,d844a4a861c7708a96e9d1d74383aa5362b374cb,be58bcf5bffda9eb47c4ee7dab504b8348774e76,kernel: spinlock: add z_assert_can_swap() for context-switch validation
+A029,A,0,5198d1ea8721a5b483a81924d6be71bedc232d3f,542279fe8218f117639c7992a15cc36c814457dc,doc: kernel: add Doxygen stubs for ARCH_DATA_PAGE_* flags
+A030,A,0,21a9723208d25f9a4982b28f8b303518bd8ff9f6,4334aaf1e85cb54caff4951408f93dd6f8731a5a,kernel: obj_core: register object types from a single init point
+A031,A,0,1b8c7a3038d98d8dd1aaf87ee5500ce88f66638b,92382add7102a5d48641e95fcdfd754235b2533b,kernel: thread timeout: Fix race condition
+A032,A,0,3096d819a973b71a3b37846c005c2374bfd909d2,645c94fdd862df6fc84bf9d19720e50e861207cc,kernel: De-duplicate symbol names
+A033,A,0,1b60add1ac447bb0027f517d446972eedb457c89,e7ae602b5c2000f87fdb2f395c6919630f552a63,kernel: mutex: fix priority inheritance with multiple held mutexes
+A034,A,0,3ce52ac95d5601acaa7a8fa235b9c055f659fcd0,f51973a740e1aa247d02d24c86233a8daa1e226f,"Revert ""kernel: avoid recursive scheduler lock in k_heap_free path"""
+A035,A,0,3b3bd23a9d9e5023fd5f063805077f06445ae0ac,158ebbd44cfffbcd5ff9ec31e9dfd437ad6cd4d7,debug: coredump: arm64: freeze other CPUs and capture live registers
+A036,A,0,491583951036bc5794a3843a4baa246453bb1ee2,3b1bdaf5482188ca110ef9a411aaa8c7d3db3b16,kernel: add kobj NULL check in k_thread_name_copy()
+A037,A,0,13d8b5eb2354927b828fff6007d24a3ed98583e5,36f1a8515aede8aa48ee62abfefa6c37f8644072,kernel: Apply lock in stack and msgq cleanup routines
+A038,A,0,51b33f884a2be9f8b8858b48662b10280a58ef95,360f4fb1fd52deb5debabc3fcf9099f112bfd2cf,kernel: timeout: report the no-deadline case from the idle path
+A039,A,0,e2dfb5a88298e773f6b5d9a1c378046c7f0d8113,48b540ffaf16409851ce84594f12ebfd7a9fca27,kernel: kheap: honor alloc deadlines and zero-size realloc
+A040,A,0,222eba03d771c1c1f5f51028eaa21cffdfad0a1d,908169d9df4d0b9d1bc371df9bfad12ea91e5f8c,kernel: sleep: move sleep code into own file
+A041,A,0,6e9d4b7f3369d3013bcc02698dc73759619c33ba,bb870f2e8fe7e2b1ca50dc377f0a9a78cb995f55,kernel: Fix a race in k_queue_unique_append()
+A042,A,0,d9ec92ccb1d91f4ea5b15271d30169d5b27ba667,d511a751b051385f60410ebabff8ec95971e5cd8,kernel: fix leak of memory mapped thread stack on abort
+A043,A,0,05ca560d2d1bcdb7450bee307f82869fa226021d,c082e22f06ec187085578de413cc4786a90839f8,kernel: thread: factor out thread name initialization
+A044,A,0,7798570a031d9f352173bf165f629a4853c7edd4,f315d76d8424dc3282a839ea6817ba9cf133d9e1,kernel: sched: enforce non-zero CPU mask invariant in PIN_ONLY mode
+A045,A,0,01b3821fd9331e5398a311587e07a849271eeaa7,703a86b7f825de1c1cabeb212ec0759b7e92420f,kernel: spinlock: provide z_spin_is_locked() for UP builds
+A046,A,0,6f268b69830741434a6acb7e723a71ccdf242e1d,7a4c19029150d469362da87183c3954deb49d40a,kernel: introduce kernel-internal init hooks
+A047,A,0,03263c5213a0f357d9e8fbb5c2b8abc55e464766,2f58de062669fb91a9fda5a89ab3b453b07623b7,kernel: heap: add BLOCKING trace and fix EXIT ordering in k_heap_realloc
+A048,A,0,d0b389da9eaed2309aafe0ed80b0a1fd2577872a,3c7d8ea5cd4cb1134e4210db153d4e5461fe6858,kernel: remove redundant kernel_structs.h includes
+A049,A,0,016f135c9b95e067b990b52afbcdf488252db901,414c3cdeaf499cbbb32998759cd9821bac12be83,kernel: timeout: remove the TIMEOUT_DTICKS_ABORTED sentinel
+A050,A,0,4f3afd3199c3e8a1617151d4cb1c6bda8df20c83,6f7f3d74d048677045a756e93dfc27d5e419af0d,arch: expose arch_page_phys_get() in public arch_interface.h
+A051,A,0,d33280510ab70f3584fb1392fea60a92e7c4580d,e0244d279b47c6a827d8e5f8699be275f53a2c03,kernel: timeout: add bucketed delta-list backend
+A052,A,0,e3744de5d76b883964ac7bc468d3cc7ed822cf53,d273f49679fd70b69408a548c8905bafdccf83ac,kernel: mutex: refuse user mode re-init of a locked mutex
+A053,A,0,52301ff761a8f9c61f4e8379fc3f409c9de2972d,285361130e0028d2d2bb25dd2fce6f8a853f9221,kernel: Add and use z_reschedule_locked()
+A054,A,0,a6b6149a50cb0f64061869f7536acbf80ccc5e0c,6ec1b773f182c3ecd7623308ada576f82c8126ad,kernel: z_queue_node_peek() needs spinlock held
+A055,A,0,d2fbd32a63b263a5398befc609bd223f21e224eb,6a83b551da7139981f2daad3cfe9337f113c650b,kernel: Only define z_main_thread if multithreading is enabled
+A056,A,0,86c6923e12b075731ba4106101606b170b59a68c,969b4b14c7988457d9a22b752f5e387dec4fb0fb,kernel: mmu: remove LINKER_GENERIC_SECTIONS_PRESENT_AT_BOOT
+A057,A,0,4e5a1c1f993227525a172581832ad33da6d19079,f37190433cdc85ea208a84ff54fc410a53e84023,kernel: sched: panic on blocking pend from ISR context
+A058,A,0,02e50aa056c54bbec45727e27803bdd0cb9ab858,dbeca1521135e53b5ed0ad9df4f2ca23ef3d32f1,kernel: harden thread stack syscall verifiers
+A059,A,0,a9b21fb354e8468dd15db307c3e599dc68b7ef33,b4ac294bf5f82572a6bda9a78103c323a45a87ad,kernel: userspace: Add z_waitq_head_locked()
+A060,A,0,28f157beaeb9a94277f985647beb8442d1e3a22b,bde2ba8901bc260e8004bb9aaa304f6c416f706c,kernel: sched: move core schedule/deschedule functions to scheduler.c
+A061,A,0,d94fbad89048e0375cd4d897f9855ae100395a5b,9b1c89a6010ebd97fdd9d27648cea700b196c2ec,kernel: sched: rename z_reset_time_slice() to z_time_slice_reset()
+A062,A,0,bb870f2e8fe7e2b1ca50dc377f0a9a78cb995f55,0404ca6394b4608480032e8760b243fd098f0dc4,kernel: obtain lock before queue_insert()
+A063,A,0,97fac4b782984d78fc9c5be6e954ec29a9b6e423,86c6923e12b075731ba4106101606b170b59a68c,kernel: mmu: remove LINKER_USE_PINNED_SECTION and __pinned_* tagging
+A064,A,0,729110c12fec2cf1843e39f19f88a86c7c676513,d720b772a899107efd685f910303aacdc31c0678,arch: riscv: use TLS-based stack canary guard
+A065,A,0,bde2ba8901bc260e8004bb9aaa304f6c416f706c,78993d70209e13465113eaed1f2584e5e3a939a6,kernel: sched: simplify z_sched_init using run_q.h helpers
+A066,A,0,36f1a8515aede8aa48ee62abfefa6c37f8644072,52301ff761a8f9c61f4e8379fc3f409c9de2972d,kernel: Update _sched_spinlock comment references
+A067,A,0,61444b281e75bbbbe31577d5e66c4bc7f45cb2ed,805b2af18ef458c9309a9424c2a3b2936ba6171f,kernel: timeout: tag inflight_timeout with a superseded bit
+A068,A,0,aec25bce220efe95c726d6b24bf8b0880cde9d56,ba11cd72bac0ff9a6fc0adc36c06f15bb24f9168,arch: change arch_mem_map() to return an error code
+A069,A,0,772e73c8aac8f8fb8a18d4b4cac2fbc87d93f7f5,b041ecc79762580ac3f925973e39af27710bd157,kernel: Add private kernel header file kspinlock.h
+A070,A,0,31a861492ec4c1ed00f97920f1237fe0bb0ef519,09a0cd7896008c6b9e09db4372ad6f91fd279fee,kernel: queue: avoid spurious poll wakeups
+A071,A,0,3ac8ef05fc2662e3197aed767f3d537e267fa994,e200f33b4a9ab0845633c0782367024b8c3e11eb,kernel: queue: skip blocking trace for no-wait get
+A072,A,0,a73dce81a7cf0beec6ff96e1db49f2931c750aa6,0c5a0c9e1ddd8196c17a585e36fae810a08c7009,kernel: mark the message queue receive fast path likely
+A073,A,0,2ea5924943cbfd46e8903da95d66267bc2b3ce5b,222eba03d771c1c1f5f51028eaa21cffdfad0a1d,kernel: k_yield: move code to thread.c
+A074,A,0,cde0a961d820b34c2141792e22971573b52de3aa,1c47cb6eb4e13088ee65624560ccf1638fbe01b2,kernel: thread: factor setup_thread_stack into helpers
+A075,A,0,158ebbd44cfffbcd5ff9ec31e9dfd437ad6cd4d7,50f99e1f21a0dc306ebe10264a406048e72dcff0,kernel: userspace: Support arbitrary futex addresses
+A076,A,0,52b4b49644ccb3bf5941588b409276e722fe8311,ef4b44bb9c7f8462d22641e3281e1f741144af51,sys: sflist: make flag capacity ABI-dependent
+A077,A,0,5058917ea61b9d075f24c0dfeb89fdb95a405d52,ef674b52f87a210481a2c6a4cb0654dac53f8c93,kernel: thread: validate cpu in k_thread_runtime_stats_cpu_get()
+A078,A,0,21a19931744081588b73d374b084db271744d820,1549a652ae4625549f77f96de5eb6729d33ad3fd,kernel: stack: propagate errors from pending a pop
+A079,A,0,3d0af5e9f9247faa7a2dcb01818056ccdb3f8941,6a281447f9952c6b65f0ce138ea282c03288bebf,kernel: Apply favorable branching in k_thread_suspend()
+A080,A,0,78993d70209e13465113eaed1f2584e5e3a939a6,cf3f8331e5efa2d2309f24c194aefbe518637418,kernel: sched: reorder z_unready_thread before its callers in sched.c
+A081,A,0,6f0188a56c2dfc6b91f03422c1502e9bd3c37a93,014488bbc2d549afa547fe14be48d30917b4641a,arch: arm: cortex_m: pend PendSV with a plain ICSR store
+A082,A,0,5b8fdd444f6ec06beec3ecd73965637b50a9bdd2,63e5202852515ad07e416f6c4764b9b9f6f86fee,kernel: stack: clear allocation flag when initializing
+A083,A,0,d24cfd96f598ace51ea7f27c512187b0e6fbe8b6,05cbc7c98a7c5c8edaaa1416ca0050959297b9a8,kernel: sched: move public scheduler API to scheduler.c/scheduler.h
+A084,A,0,1d935da7002997d8fd2eacd18af4c728d4869c7d,ceb26f67f0a0f66a317de89d2bf08a3d68d36ffc,kernel: Add support for dts RAM configuration
+A085,A,0,5188d5009b02d7ea8ee4891e2c8e1d2edeaf2308,e4b928ef193c82d5d80c9e02a125c67cbeed4ea3,kernel: timeout: add min-heap backend
+A086,A,0,a08e6b9597648ee5f6d6af2b3fe6949e181470d4,e867a846421400cf70383483d2bb4d7921a95ec7,kernel: sem: do not wake pollers on reset
+A087,A,0,15af50d20252ec193f7aa9e9a26030a8cf18e32f,61b4aec2d2923023e50db91c3fce2e39594a83ea,pm: keep irq restore ownership in idle
+A088,A,0,b6bfe9fc6a4ce37ddf07a114bf557c65741b1b78,a7c0ad12a8b3c8513866a93a0051e5cc6bbf7ed1,kernel: Update z_sched_waitq_walk() warning
+A089,A,0,ed66c0c1dde3da3054682962486b2b9df728860a,05bc3dbff5b69018296e25806356c73e6a6b4dea,kernel: timer: track the armed state under timer_lock
+A090,A,0,1a72685d23c8a5b0374583483a7519fe29a39a1b,702912f3a21c6c72a899bebfafd3d8dc940773fd,kernel: events: update comment explaining the wake algorithm
+A091,A,0,d01ea12e787e410324eae5d80596227cf3274899,43af622bc5e554cde8ed3266c91e700729ba3cfb,kernel: queue: remove spurious BLOCKING trace in queue_insert
+A092,A,0,5a0e1f9eb7fa3efad990b89d50257296d7d85724,813f39fa0257666ba354b083af34a13c7b01360e,kernel: add Pugh skip list timeout backend
+A093,A,0,f6e012d1bcccf23c41e7369ecfba546087175ae4,6b13ddc11708335d425abdbffeaa60cb8486a36b,kernel: sched: Remove redundant timeout check
+A094,A,0,7edd8834f66701189dfaf3f1142b2bfba0b508bd,ffea3d0062db8c8735affcda055530429c8e9130,kernel: sched.c: remove useless return on void function
+A095,A,0,f6c0abb54cacb942cf9495385685f4b0e36cdec7,10b52f5092a01bdc9de9cba00923ec8175199c2f,kernel: timer: Include include/zephyr/sys/clock.h
+A096,A,0,c5fd691a587e398b419e11a7699ef38c18255bcc,893c97cf6970468853cd2fea9b12085ebaa60cee,arch: fix Doxygen structure and document macro slots in arch interface
+A097,A,0,b381345043fcba29b681d029920175051f5ca852,7608f5eb4565eb01800e379d3b8f461677d9c8cb,kernel: timeout: factor delta-list queue into a pluggable backend
+A098,A,0,387b387479edbd1be39c498b9194ff87d83424b1,6d83c1abd004496f56f9e2e9f74d3933cfbbf807,kernel: sched: migrate scheduler-internal sites to z_try_abort_timeout()
+A099,A,0,5c12262de735358850365ede6d6f17c2db175131,3a2138f965bd9c46ccd990a657b89a6b28639a08,kernel: kernel_offsets: put the include guard before the includes
+A100,A,0,3fc6d9e700d70e0f048f522121d0c2b8a5f309b2,a6b6149a50cb0f64061869f7536acbf80ccc5e0c,kernel: k_queue_remove() locks spinlock
+A101,A,0,90d196374505a3b215b9cedcaf0f0e42b3a9be00,af96672e89e351235d29b2b64f874cfe9133ff63,sys: util: move lowercase min/max/clamp to a new minmax.h
+A102,A,0,cdb04e25b9063ad2c5706744600f712800ec7332,d46a8c1f8fb65e1f80b44bd651a6dafea747602e,kernel: widen CPU-iteration loop indices to match bound
+A103,A,0,1dc47344d0a2bc1d66f33d68888c6c92a439e7ed,e81266be2bfec8233d5826ce31083ca489b3286c,kernel: use arch_cpu_irqs_are_enabled() for IRQ-state probes
+A104,A,0,9722f39203bad12a28f31787f1aa827962eb7ad0,354dbc456aa52685b2b45b73887ba7633eb9a66d,kernel: fix doxygen warnings exposed by adding kernel/ to docs INPUT
+A105,A,0,0ea1a26fed179c8747c9fb9bff6e26bc5c82931c,f5d2fa753f9b990c43360fefd3c8e51cac4c2092,kernel: queue: remove alloc nodes by payload
+A106,A,0,ce23f1d734d53f9bfe4795692ac308e37492de44,cf6d9d8fa8c93bbb117413a7a6021e63443868d9,kernel: sched: switch z_thread_timeout() to the superseded check
+A107,A,0,ff508efd6a8ed42d28a5f77321243a986c3ee3ca,36d151329542beac5c1834405760f360a228c5de,kernel: mutex: detect re-init and uninitialized use via magic sentinel
+A108,A,0,d7059e67e8265c848b934c9a4e8e685cd32c7cbf,b69832497b9be0f443f2bd87dd57c6c16fc9ad8d,kernel: sched: ready unpended threads unconditionally in *unpend_all
+A109,A,0,fc11a9166eee7465381ac27433c7f8b42df3dc6a,2ea5924943cbfd46e8903da95d66267bc2b3ce5b,kernel: sched: extract meta-IRQ handling to metairq.h
+A110,A,0,cf3f8331e5efa2d2309f24c194aefbe518637418,8e920c310f5a4596ef8fda2a7aa6bbc11d981e7b,kernel: sched: group z_ready_thread and z_unready_thread in sched.c
+A111,A,0,50f4e51efbba986233329a9f951f7dc258c9a07b,1b1ecdc438092cdd469319a0d51cba6cf82e06f4,kernel: smp: update SCHED_CPU_MASK for multi-scheduler support
+A112,A,0,bd1828652dfc217ba9f3a2221a7499cd8914ed9c,eb63a20ebe1ccd8e2492a0803c9048aa650beb20,kernel: thread: fix thread_obj_validate oops
+A113,A,0,6d5de3cbaab0660c0af6cc0fbd396886274ea218,8f2cd66e3b6862a6676576b5d56424a3a90d4fec,kernel: sched: always inline unpend_thread_no_timeout()
+A114,A,0,c92699626c5c9598aeccfee906b9b81a349dbb76,9e2dde2532cfb53c64466fd448447990601c75e7,kernel: timeslicing: start one slice per uniprocessor context switch
+A115,A,0,285361130e0028d2d2bb25dd2fce6f8a853f9221,772e73c8aac8f8fb8a18d4b4cac2fbc87d93f7f5,kernel: Add and use z_swap_locked()
+A116,A,0,9f788430c9ecdd9a7273e219c792544fe42d19f8,92a1a49bf7ded5b0a7c55a97cd5838f25e5f791c,"Revert ""kernel: mutex: detect re-init and uninitialized use via magic sentinel"""
+A117,A,0,1549a652ae4625549f77f96de5eb6729d33ad3fd,5b8fdd444f6ec06beec3ecd73965637b50a9bdd2,kernel: stack: return documented errors with runtime checks disabled
+A118,A,0,f262a73349543f06bb0e9fe57c76de21b59bb9f6,8c1692043a2e3bb23544ba3009b8b2092837d516,kernel: obj_core: initialize object types at build time
+A119,A,0,6ec1b773f182c3ecd7623308ada576f82c8126ad,9589281802a78b3afe1cb583a391b9eed7155f09,kernel: Make z_queue_node_peek() static
+A120,A,0,0659dc18b3bd8d3bb23c57059edddb51b7fa458f,7afcd3c62fdfdeb0e419d2cf21b26bdcb78a8c4a,kernel: sched: move thread lifecycle calls to thread.c
+A121,A,0,8e920c310f5a4596ef8fda2a7aa6bbc11d981e7b,a564d82a04e7e8376ef65dc372cd2982ce0d629b,kernel: sched: remove z_requeue_current() indirection
+A122,A,0,26e88cee767e546601da29217b5258803c5a32f1,c9377e6d9075bea6b95d2495a2c0b2ccfd3de3a1,toolchain: iar: suppress Go004 via ALWAYS_INLINE override
+A123,A,0,5aebdc4851306819ff176d874a1216b80f65fd46,d9885fb6801351ca81d487b6447091816cb31c60,kernel: queue: integrate queues into the object core framework
+A124,A,0,2f7f6af69335659bdeec24ab6534b4d1b57d40ba,3c3b37ca3ee31913e3d75802b021356c5cc9e403,kernel: initialize swap_data if CONFIG_SPIN_VALIDATE
+A125,A,0,d9885fb6801351ca81d487b6447091816cb31c60,4975adf0008feae6d84b515d2d385c856550c9ad,kernel: obj_core: allow several permanent object ranges per type
+A126,A,0,ffea3d0062db8c8735affcda055530429c8e9130,d94fbad89048e0375cd4d897f9855ae100395a5b,kernel: sched: extract thread CPU-usage tracking to usage.h
+A127,A,0,06a69ec04a2143a1c6846b992f9da5ed706086f5,ed66c0c1dde3da3054682962486b2b9df728860a,kernel: timeout: report a running handler even after dequeuing
+A128,A,0,e0244d279b47c6a827d8e5f8699be275f53a2c03,5188d5009b02d7ea8ee4891e2c8e1d2edeaf2308,kernel: timeout: add timer-wheel backend
+A129,A,0,e84e2f7955a9fcae8eefa5e664023bad862c65b9,33cd3883120e930b45de71dc3188b151540ba7dd,kernel: rename the reserved 'exit' labels to 'out'
+A130,A,0,0b0b41ce9dad8c6068e46c1c1ebcc2c3d66dc23a,f520d5ce6d6aebe1e8fb055334db589e27894326,kernel: Initialize timeout.dticks on k_timer_init()
+A131,A,0,3a1d70f4509a9233d07e42a220ae01e7e8e8d929,2d47a9b79ce627ec2b8c1e6f8c5e7db69ec4ed2f,"kernel: kheap, mem_slab, mailbox: use kernel init hooks"
+A132,A,0,7a4c19029150d469362da87183c3954deb49d40a,a148f403a74131bdb1b5cfc619844e3ffb126c02,kernel: extend cpu_mask and IPI support for up to 32 CPUs
+A133,A,0,fc881ba59e202bd9c83585f0bb5ed29fcac738c5,1e52c80986420cf60d4b436e2d99a40afafb8cf8,kernel: sched: limit the IPI drain lock to thread selection
+A134,A,0,a564d82a04e7e8376ef65dc372cd2982ce0d629b,4b525273bf64bb07c3e067177d2f2bd3e4cd9bc1,kernel: sched: extract run-queue helpers to run_q.h
+A135,A,0,22d76caba597287eb41ea81d0da89a93d2a464cf,0aeeacf75b292f1beb34a87060462beb34c2c6b3,kernel: sched: optimize scheduling IPIs for idle CPU wakeups
+A136,A,0,03e4556134cfb28c30984c86d70034c449052231,61d23e2490eac4a2fee6ee0c726822965719f39a,kernel: sched: use function aliases for simple wrappers
+A137,A,0,0f7b0ba0f1044954aa39bf848725e09553d1a23e,6d5dbec39a8c9406975761338172694f1684ae97,kernel: fix thread runtime stack safety syscall names
+B000,B,1,cc80daf522714c79add271c542872531e9221589,838c5408759bbc061a21cf281bb1f0f8e7d168d0,kernel: z_work_submit_to_queue() may reschedule
+B001,B,1,3d405326a7653cba6860280e45c8734f8d3fc423,01f0cea45d6fe11e085ae21de335a6f612a7f9e0,arch: arm: Forcibly set K_FP_REGS when FPU enabled
+B002,B,1,4bcd74122a8d9bc761a464283962ff521b08f61a,39ab71e612604ade423bf10c1831ff12e2e10e75,arch: arm: Fix secure Cortex-M ESF lookup
+B003,B,1,cfb9ad7d7b2e2aea02483a70efd769076f7593fc,21a9723208d25f9a4982b28f8b303518bd8ff9f6,kernel: mem_slab: integrate object core via K_OBJ_TYPE_DEFINE
+B004,B,1,e422289713c204079665413912b34472c3779743,08229332df5b285710f925703facf73e16128d0a,kernel: userspace: keep a thread in its domain when moving it fails
+B005,B,1,f5dfc4ba3e250530c076c1caa1c33ad1a1f7d2d9,ce23f1d734d53f9bfe4795692ac308e37492de44,kernel: timeslicing: migrate to z_try_abort_timeout()
+B006,B,0,96d1142210e36b6985ccb3ffbbea7b3569809c0d,ab077598094454b23d08f4a7abd01d333f750fa8,arch: Add support for dts RAM configuration
+B007,B,0,274d67b107e6b76f582492d3f2b842a2237311ad,fe64a66990b265fc04b7726ca3fd95f0d1c000d8,kernel: move the sleep API declarations to their own header
+B008,B,0,974dbbf2c0f63ddbf177826b6dc022c168d247d0,d8a1960c8bae7f93a6c6f10693b65e1dee19349f,kernel: move userspace kconfigs into own file
+B009,B,0,aa4aa86adfdd06e4b37b77fd8d6761aad476f232,e2a4c9318ed08cc3555fc0008fee44df047d4795,include: correct the reversed empty-struct C/C++ comments
+B010,B,0,dbf1d2dcf91873509bdf616b3fba5256dd2f5f82,46f806072c2f9025ec2c101b9d2091ff70cb5b3b,arch: arm: cortex_m: fix DWT COMP1 clash with vendor macros
+B011,B,0,85c1c4c21945d9b8fcef03216f1ccb2b27794e3d,d4c908e3902a2b431fd8d5f226fcbae38f63fe37,kernel: userspace: reject size overflow in dynamic object allocation
+B012,B,0,d157b3da193d5c5376db15f2a110102a435ce02a,75bef580e90566353b53b17e0c4364396d3281b8,kernel: timeout: keep announce_remaining stable across same-tick group
+B013,B,0,d71722345925597939f10561bda9f4dd4a21c6e9,a7e386826dafbd629b5df957c29511bf1f6c1566,arch: arm: core: cortex_m: disallow unsafe D-cache invalidate
+B014,B,0,1036694889ab33996db41b4141ddf66aa786d267,85c1c4c21945d9b8fcef03216f1ccb2b27794e3d,kernel: device: restrict the device_deinit syscall to driver objects
+B015,B,0,7170b2dba267acfe7c8775258fbbc80c11099051,d571d1f4152e549d9f0e21ed0fcb75f834f9b531,kernel: fatal: use EXCEPTION_DUMP in fatal error handler
+B016,B,0,6484418a3a11f126a29a780fdd9a1e869d34f6e1,45903731f75738854354398c3316ed6c63bb33d3,kernel: move the sleep API declarations to their own header
+B017,B,0,c5b4762c36bab156dbae6c5bb06688a4252b1eed,f5dfc4ba3e250530c076c1caa1c33ad1a1f7d2d9,kernel: poll: migrate to z_try_abort_timeout()
+B018,B,0,7a72151634e8062acf64e461587dd0d8736e2be6,9bfb449d16fd348cf6ee50170d905558d5368f17,kernel: smp: replace SMP_BOOT_DELAY with per-CPU devicetree deferral
+B019,B,0,2ec65238d68a7eb69462b6a31ba377d417f4a3a2,5e8435875922907705e9ee24e752f8713be3ec17,kernel: timeout: make in-announce check CPU-aware
+B020,B,0,054932f1672fae57958d6713b19a984054bad996,df2302d9526e7e0d64d9bd44188b3198c1b489a4,arch: arm: cortex_m: guard CONFIG_USE_SWITCH for stack buffer
+B021,B,0,1d32fe915333f4569bb405526479d92ded435097,6484418a3a11f126a29a780fdd9a1e869d34f6e1,kernel: inline k_sleep() and k_usleep() over a tick primitive
+B022,B,0,d4d42187942863d901d35f5118923041e95f6c73,12efbe93632fc17c4d7cb328f43ed460e7a866bf,kernel: mmu: recover from failed mappings in k_mem_map_phys_guard()
+B023,B,0,0d6e89e998dcc1461746866643dcee0b8e6abb01,21a19931744081588b73d374b084db271744d820,kernel: work: wake all k_work_cancel_sync waiters
+B024,B,0,58f9e1c1f18ef30997f1218bffe925e1e75ed582,5fa9df2b08fb072ec123d3ec57f71c2a91cf1674,kernel: timeout: clamp remaining ticks when announce is late
+B025,B,0,4358001f103d720fd3ae9e8e611226bbe7b8557a,c341e94d6eac01b6e49b5dde70b614eef50a2860,random: use `HAS_RANDOM_GENERATOR`
+B026,B,0,86c17aef065d871078dd1994c8e92128f950f7bd,74ff7d3913f692ed10363a7f0a466f0366bc2c2a,llext: arm: Restrict llext veneer support to Mainline cores.
+B027,B,0,cbc956aa6480f058f9d1dac378d181dd7eb77174,4a767996eb1a7d7117127a0fa75448b10e97040b,kernel: mailbox code to use z_sched_waitq_walk()
+B028,B,0,bfe8a9f2989df2ad711a893bfa439c5eb922c695,d7721afeaae25b851671b02135bf26d2dabd62c2,kernel: spinlock: read the current thread from the per-CPU record
+B029,B,0,8483d28b42a68841f88009ab13b056e4ab472ef1,4590ddd36faad7ca161ffa740c5e7d6ddfea261f,toolchain: fix deprecation warning for iar
+B030,B,0,b04994206c693adfa9d5e4f1276a05b9d038a303,921b3c7beb5f08ccd1a0aeea3e2a152b2647c5c8,kernel: mm: fix always-true VM base check when base is 0
+B031,B,0,be27dd7d939c7c570aa0984f3845cffb53394f82,095f2a89cb32360fd950058ad5f53b3dec256021,kernel: avoid unnecessary time-slice scheduler locking
+B032,B,0,befb09db72e907f5d20c636752da903d1cc2446f,71a921f31a85e0c0941817e1bfded0dcc10efa7b,kernel: init: remove reference to legacy api
+B033,B,0,c5d5312a0a1a0c6ece42bd9c66bc046d52b78b07,dc305e174f124ee8ac89a992e358c446d47b5a69,arch: arm: cortex_m: rename pm_s2ram assembly source
+B034,B,0,a210fcb3cb6e05b311dbf7bf2dd936fc9b14f454,c9591aa57f79c660f96c33b8a6393052cf492b9e,kernel: timeout: report the decoded expiry for absolute timeouts
+B035,B,0,67ad3e2902942f6d400312cb33edf63b6d351376,e53b99d415729d851d57487ab37bb2c5ae04745d,include: sys: add common header for reversing bits
+B036,B,0,dc614572516ae39ade41d777cd9fcf4f90c74086,2422ec59036c5167f950feb835574bcc93e1dac7,kernel: stack canaries: disable TLS canaries for Clang on RISC-V
+B037,B,0,e1b4cf8615bcf345127c29e5d4b6fb9f1e58a0e4,6527ead56be3b04920e9a109c3c671790cc752f0,kernel: Update CONFIG_SWITCH workaround for clang
+B038,B,0,fc7a8936a495698a7ac76556d3c2967e5978cb9a,950b3a69a6c5efd5889c82632eae8d6de1e0e5b7,kernel: usage: fix double-count in k_thread_runtime_stats_disable()
+B039,B,0,5761d7d7077a368c164d01aba959e47a88b65564,a5244984a05bdad810c645aa9efe47da4f004cce,hexagon: add architecture port
+B040,B,0,85ca9bb992e2a92d170fded09e14c1c1680afb01,974dbbf2c0f63ddbf177826b6dc022c168d247d0,kernel: move smp code into smp/
+B041,B,0,6d83c1abd004496f56f9e2e9f74d3933cfbbf807,61444b281e75bbbbe31577d5e66c4bc7f45cb2ed,kernel: timer: migrate to z_try_abort_timeout()
+B042,B,0,e10af2299123a09b5c1cef2212d9ea5bb95c7fea,18c27b05da0075a623c5693cfb42b56a76299296,tree-wide: replace usages of k_work_q thread with thread_id
+B043,B,0,2ba2fa6f9b808b8171e13488211d1920ceb352eb,b7e0799f1583047bb3831d49d2f013e8f17d74a4,kernel: sched: enforce half-modulus invariant in k_thread_deadline_set()
+B044,B,0,167ed9e38a6a66c223bb0e5d0de471bca4b5687c,554685721eec46c159e6fd2719154f0e8d7e635a,arch: arm: define TLS area also when multithreading is disabled
+B045,B,0,4b764a172ca84d45d4358dda502de990ac01152f,13d1e050d4548c2d1bf49f7a380ae4d6d44198fe,kernel: pipe: notify pollers only when data is stored
+B046,B,0,8742067a7af85885e3c2b3977914f259a01d828b,b34f12cb6a5ba2c88d34446c770be6e5faeea6f4,kernel: obj_core: name the walk callback parameters
+B047,B,0,d38477cdf65e9bb5a796716e9faed2fd70c2ed90,274d67b107e6b76f582492d3f2b842a2237311ad,kernel: inline k_sleep() and k_usleep() over a tick primitive
+B048,B,0,f6dfffb7ea0092ccdaf9620670c49ad0872e06b1,4343116decf21be764cfff61257ecd30abe0466d,kernel: remove duplicate config OBJ_CORE_SEM
+B049,B,0,1583ed5a4b384a5b0ade13f3bc451166f6a81ef1,f22b738c3bdb7e7d93e809a60422bd4c914d5370,kernel: mmu: name parameter in virt_region_foreach
+B050,B,0,777ab585520e15a5d3ee9383ec939f4bf1ebff38,05ca560d2d1bcdb7450bee307f82869fa226021d,kernel: timeslicing: avoid recomputing the slice size on rearm
+B051,B,0,eff636cd8893072c675f9d5bcec8d5c85f54b880,00bbe2c00d53f492e5e87aec51f8d26f31808869,kernel: fix race in cpu_mask_mod()
+B052,B,0,f914b6d9015a7ca49bf47bc7cc3d689c655c2700,1222f28f540f38bb5e80e48f23c5dc2eab7e3a07,kernel: Fix HW shadow stack macro parameter documentation
+B053,B,0,0f8f4b5344512898d596a722dc12deace1443b6e,867066c4b95214cc8af32c5f6b497deb17dbd495,kernel: mm: fix address bounds check in k_mem_phys_addr()
+B054,B,0,63732a6fb5baff9e4310a7c3fe2b1dd5a338cf0f,ee852fa4163cfa4618f517e4fc3fb7e236dba934,device: make DEVICE_API_GET assert optionals
+B055,B,0,c25fa5fcc467b76566b2d65aff3b99f88ec2ab7b,d115297bcf33d8d0d37dd7e0042677e49052d91a,kernel: smp/ipi: pass cpu_id as function argument
+B056,B,0,1e68351a2572f9ae480be71da4aca9aa90db3fb2,016f135c9b95e067b990b52afbcdf488252db901,kernel: userspace: abort timer before freeing
+B057,B,0,b4ac294bf5f82572a6bda9a78103c323a45a87ad,13d8b5eb2354927b828fff6007d24a3ed98583e5,kernel: k_free() no longer calls z_waitq_head()
+B058,B,0,cae85560fce6eb07652f094403412462ecddcfdc,88eb98588abf8892891f9d284e219beb1dc67b93,kernel: pipe: refuse a length that the return value cannot express
+B059,B,0,25d08114e92efca16708e832599e1caae77dcef0,b9f8798c7de973713c00a03f74a003a31319ed59,arch: gate idle notification hooks on SYS_IDLE_HOOKS
+B060,B,0,b0ed3dde1d210d1b063312698b40fb0a24db0858,b8d5f52be9b232cc4888b45df9eb4294e1e751a8,spinlock: Validate support for up to 8 CPUs on 64-bit systems
+B061,B,0,43774bbb435a87a0f8b95a32e2359c6ec28d8995,eeb75b4562bd87229b6c15113afdc6f119c78f81,arch: add firmware argument handler hook
+B062,B,0,862ea2fbbeb2ccdf8ff994b03e2e3b4405f2c37d,8d8990d331893768b987f7bb3d5fe0de808454b9,kernel: userspace: fix thread_idx_alloc() for SMP
+B063,B,0,093325206d082131fb2073ddd25b1645001a27b6,87a9fb4aefb6d3fc584da71599088d1dc280808a,kernel: smp: ipi: do not drain self bit in signal_pending_ipi()
+B064,B,0,790c09cdcc9c773ed5a7c70c0cfb1c36737ab051,c452faf42d7a5623bab1022ea462c323e3f3655b,arch: arm: cortex_m: Auto-enable FP workaround where needed
+B065,B,0,84e82eae4c738639bbde7770ea307d2ad8ef2a26,bd08f632bd62a1f644ea3f1df06ccc7a49d2c94a,kernel: Kconfig: remove prompts from SoC and Board Hooks
+B066,B,0,eb294b7a1eb988f24d80f193c648981246802944,bb599be0b3ee7d650496a4e94234107bc743db21,kernel: move userspace code to own folder
+B067,B,0,b627ddea4b0accdef331ca17e86431225b64b11a,11f073c3e091c8e36b8136b6388d03002cb61b8c,kernel: poll: treat a closed pipe as readable
+B068,B,0,2dea66aa7e399ba8f14723c3860704f59efd4223,34c0b7cc6bd9bda84d722b62bc9dcc670b85ffde,kernel: userspace: Implement sys_mutex based on k_futex
+B069,B,0,b572cb23fc8b70c9e68cd9e4041b39e450e0e161,85ca9bb992e2a92d170fded09e14c1c1680afb01,kernel: userspace: move mutex/user_work to userspace
+B070,B,0,fdc42fa256b8c2a7b27790f032d5385f8058c4a9,9280558dc3bdabf6ad88801e2864a8797980a418,kernel: userspace: fix SMP use-after-free
+B071,B,0,81ccaca788db24980e2ce995d0d17676fbfa2dab,39b23fa582d8b7078ce7c7bfd534790ae641177c,kernel: ensure kheap.c is linked for static heap initialization
+B072,B,0,e6f29b7130aa14ac0dcc1e9eeceb7615bc68a060,d9f31588778ea749cf9ada793383d65f8ffc19df,arch: arm: use k_thread_is_user_thread()
+B073,B,0,39b23fa582d8b7078ce7c7bfd534790ae641177c,3ce52ac95d5601acaa7a8fa235b9c055f659fcd0,kernel: bypass k_heap_free() in k_free() to avoid scheduler locking
+B074,B,0,11426c0d7bdc7892444ce0e541b1fe7d07bc697a,ad9dc4618938e7c1e5180463957451641ef41466,kernel: usage: account in-progress cycles of another CPU
+B075,B,0,db7a5e80a47b7d2385ba31b6899712b81bef6c46,9fe4cc20a2b5c7ef269206bfe80b8e606e813156,kernel: move bootargs out of kernel into lib/os.
+B076,B,0,9912d8c3a5eb713e71380be104b5dca30b71d8b2,2bd92ce5141eb6ca9741d0c1bbf13ea57e8a67b3,kernel: timeout: micro-optimize elapsed() on UP
+B077,B,0,6cfc248b9fc94bac6dbdcfaf7792c67936012d99,d62b57e5112bcb1e574447b84a61b624d344646c,arch: arm: Restore stack alignment with USE_SWITCH
+B078,B,0,3d7be78899f5b824650450bf1ef2c64f26d87480,a9637109bce964a0ef4f7328925d54a10a339f23,"Revert ""kernel: timeout: drop the idle argument of sys_clock_set_timeout()"""
+B079,B,0,6527ead56be3b04920e9a109c3c671790cc752f0,c35dd295dffb869212d78d8eda0512faa011889b,kernel: format CMakeLists.txt
+B080,B,0,b0db04ae6d3c0f4245ef50c88cac82c47ba8f723,67a2719248df060f41a44ffe5160e28963ad426b,"kernel: userspace: operate on permission indexes, not threads"
+B081,B,0,5524bbc3e4f326be413a6f309b94636f3918c1c7,fa6c87eeb1f94f87280e7df9709eb487425e8172,arch: add portable IRQ pending-state operations
+B082,B,0,d7055f8cc941f2fca7a62ce1d39b4c59315bbcfd,9a420255edead9a00fceef93c8d54a8ce6de4fc8,include: name the parameters in function declarations
+B083,B,0,3484454ac820363a39f5ae627c09e0c78376085b,0092a2fe37d6acbf4b6a30c7ad3cd1a0c3744e95,scripts: kconfig: hardenconfig: switch to YAML hardening database
+B084,B,0,d62b57e5112bcb1e574447b84a61b624d344646c,0d8bb2b610b2d607e522c8d3c1c02a1e5f02f35e,arch: arm: cortex_m: Fix undefined behavior in FPU spill
+B085,B,0,9f6de47ed2b39601585f692feaf4bd3e760a77e1,d1e397da2d264b92da9a17081c9c83405f04aac2,syscall: Add K_OBJ_DRIVER_ANY
+B086,B,0,603fa4818e8faedec88364d2eb3f6c44eb52d763,1dc47344d0a2bc1d66f33d68888c6c92a439e7ed,drivers: timer: assert sys_clock lock held where required
+B087,B,0,8c1692043a2e3bb23544ba3009b8b2092837d516,1afdf94cef001455948dfff6d5ab2db413957d25,kernel: obj_core: replace intrusive type lists with a registry
+B088,B,0,4395894020465ccbb24078f38aafe0faa6efeedc,cbc956aa6480f058f9d1dac378d181dd7eb77174,kernel: Fix race in mbox_message_dispose()
+B089,B,0,c720659e6b9c31ce316ba5709855d2d025b9312c,530983e705a8e0adce2968ce5109afa333729750,arch: arm: timing: fix hang in DWT frequency calibration
+B090,B,0,1e1332cf7b35d7ba787b259c5b7f82e1c3045dff,f262a73349543f06bb0e9fe57c76de21b59bb9f6,kernel: obj_core: do not register objects in stack storage
+B091,B,0,339674057df5f6a288f44de0db683bbbd3eef2df,b09eb8bead30b704313761594786ae836a939698,kernel: device: leave a device uninitialized when its init fails
+B092,B,0,c33571b37279d5186955d4d4ba58f941ce9a92c0,f4a2a270715bd1c89bb288a6b5f211e0d0e554f0,kernel: timeout: cap the timeout passed to drivers centrally
+B093,B,0,9b1c89a6010ebd97fdd9d27648cea700b196c2ec,d24cfd96f598ace51ea7f27c512187b0e6fbe8b6,kernel: move gen_offset.h to arch
+B094,B,0,c4b50e3bf37ca1279b21541b9653863bf4eec6ed,d910a649aeeb432559f042541f1693ffb46a77d3,kernel: smp: fix stale SCHED_CPU_MASK consumers
+B095,B,0,7a5431a6d834f8c367b7428873afd2bdbb1816b8,5061ae703d6e421df1611d1157211e7496d4bfad,arch: arm: cortex_m: select USE_SWITCH_SUPPORTED if not nonsecure
+B096,B,0,1abd829b3f4667e9ae53159a870233ffc66f008e,ae52d5d7421414b567937286d8563c93a72a1fd9,kernel: timeout: initialize ticks_elapsed
+B097,B,0,c60e0e94360568efd93b5f608e8d2f07924e1542,b572cb23fc8b70c9e68cd9e4041b39e450e0e161,kernel: move userspace sem into kernel/sys
+B098,B,0,0bde5ccbeb1cac3f5763debf19d360a445c0a948,78593c2f62c6f5e906b23010695b263fa50a46f4,lib: ring_buffer: drop select/depends on RING_BUFFER
+B099,B,0,f4747547d95107037daebae32e2f48568b8e53fd,e8e596dcf17348bc7f488b4dfe06fe0dd736a295,arch: ISR table size optimization
+B100,B,0,0c5716af8c85c7fffcf18076826da436fe68fa21,dcf87501cbd8f39cfb22e40592c526c71599fe75,kernel: skip redundant runtime usage stop locking
+B101,B,0,7d4140aee7650d5c0cdb60ec198cfec3cba5011b,cc80daf522714c79add271c542872531e9221589,kernel: Streamline k_work_submit() tracing
+B102,B,0,a672a717caee224a1a8ab72b0d4bbfdd8044049e,1d32fe915333f4569bb405526479d92ded435097,tracing: give k_sleep_ticks() its own trace point
+B103,B,0,5ca3c912b29bf8ab629478e55dff9be1d45c4fe4,3145230f108bef933e6e210ff2fcc1fd0ddf6d64,kernel: userspace: Add k_object_access_revoke_others
+B104,B,0,d8a1960c8bae7f93a6c6f10693b65e1dee19349f,eb294b7a1eb988f24d80f193c648981246802944,kernel: reorg mem domain kconfig
+B105,B,0,068d8a1aa76d5199887b38e8b1c7a3eeadf42717,f44e15ed8492cf835f73c53fa9fe8fcc60dd9731,arch: arm: cortex_m: disable the MPU before clearing its regions
+B106,B,0,470f4687608814688f1737e58c38a0e458867fed,c02a99fa560fb41f936320f5e8adef379539f001,kernel: thread_entry: fix include for TLS stack canaries
+B107,B,0,1222f28f540f38bb5e80e48f23c5dc2eab7e3a07,bb0f98fc9abf56a0695541e508b989f6573e9778,kernel: obj_core: Fix copy-pasted brief for stats_enable
+B108,B,0,66e19780519e9e590dbb4b1fb871a94fcfe7757e,26c47877564b96f2772a1d0a8b4c42b28753f79f,arch/arm: Fix CFSR MMARVALID/BFARVALID clear with write-1-to-clear
+B109,B,0,83b739049cc6a8846927e53b97b0cf1b3929a94b,120784014cf5eb169e1ac915c6b90712a7748b7f,arch: arm: don't overwrite D/ICACHE_LINE_SIZE from dt
+B110,B,0,2e2202af616cbd522265de2cc9a20821d902c482,d157b3da193d5c5376db15f2a110102a435ce02a,kernel: timeout: make z_add_timeout round-up conditional on announce
+B111,B,0,95eca64dcaa26f8a54422cc3438aa217e5cf61da,6cfc248b9fc94bac6dbdcfaf7792c67936012d99,"Revert ""arch/arm: Work around FVP stkalign glitch"""
+B112,B,0,d7b131763f3de32cc5f30ce2443be03064b9b42d,5f92fe0431fddb44d695d0bf0f37f2c2d40aaf5c,arch: arm: Use CMSIS APIs for USE_SWITCH
+B113,B,0,34c0b7cc6bd9bda84d722b62bc9dcc670b85ffde,f6a5c2fee0c3e9df6f72fb9a4488b2e3c3b12f56,kernel: userspace: Change expected futex parameter to atomic_val_t
+B114,B,0,cd52d13b7d79e9cc64a5055a062c386293770ef7,356f18a3815e58824832de89dd593b66c7f28226,include: zephyr: Rename header guard macros
+B115,B,0,926f7c4c0f813f80d66bbda45de97ffd72ef9b6e,7e681dbfbdab87462daa109af07bbdf7324d8174,kernel: timeout: add sys_clock_unused() and decide sloppy idle centrally
+B116,B,0,85a20851723f79e3cadc3314ea9bb3617e6d0d0e,17982a1961e9ce3830f772811835c3559f7cda51,pm: make IRQ-locked state-set the default
+B117,B,0,fa9b836416b344f03db12cc11c4f6afac66f31a7,7d0bb85adc29b541a9c3fb722f0b8c6fa6d29d7e,kernel: timeout: drop the idle argument of sys_clock_set_timeout()
+B118,B,0,90aeee3cd5b0c568cfea8767572feabebfc9f5f6,1c6ee7fd15de7f9141f32ad5c8a6746a16a3bdf0,profiling: perf: add Cortex-M stack sampling backend
+B119,B,0,1296dc85e33299ca376efb1d38320f7ccdf9877d,de007168e2984fb842267ca8ac0a22ca09831004,kernel: timer: make k_timer_start duration match documented semantics
+B120,B,0,04c58a2ddbb615cdb06b50d0d7dc49d4c323ddbd,28d45d88a4db4edc5031ae653f9fc8175a7efd9e,kernel: userspace: fix validate_kernel_object type/init
+B121,B,0,12c33a1e5acfffaabd4561cb095721ca960d2a9c,cd894d6c823aafc4a35a7d5296126231607c9d5f,"Revert ""kernel: timeout: add sys_clock_unused() and decide sloppy idle centrally"""
+B122,B,0,f1521edd229774b6e3cd4796d1e7300a6d6c1131,90b37adc56056708176a3b075b9168ff9e401f6f,kernel: move USE_SWITCH out of the SMP options menu
+B123,B,0,f22b738c3bdb7e7d93e809a60422bd4c914d5370,8742067a7af85885e3c2b3977914f259a01d828b,kernel: init: name the main() parameters
+B124,B,0,396f412256b87ed368709e1420fa4a685845ad0c,84fbdcb06d3a4ffc5e9f677943a46533f63f925c,arch: use include/zephyr/sys/clock.h
+B125,B,0,1633c890bde972864c1e78f300a14e59068449f4,a412f2cd41bd168c194486313fa0af50cd038903,device: make z_impl_device_is_ready() a static inline
+B126,B,0,25249c3e23bc6ae571ad38c287c051bc3c40ee9f,a8992667c5153f8458ad4a95ac3b006869362dfd,kernel: timeout: guard arch_spin_relax() behind CONFIG_SMP
+B127,B,0,fa61529665937fc5184f5283a07de57c51b77776,ba25413e5b6b2661a71db24888f6b89274f1480d,arch: arm: cortex-m: exception: add system control regs to extra_info
+B128,B,0,2dd9f5f414d3353e247f294004608e229587bd5e,ed8b5559afcdd724658bdbbe4e955d64fea70a47,"Revert ""kernel: inline k_sleep() and k_usleep() over a tick primitive"""
+B129,B,0,ef674b52f87a210481a2c6a4cb0654dac53f8c93,1a0049d8ca4cdcf38910d3fa6aa05a61e1534362,kernel: mmu: handle demand paging failures at runtime
+B130,B,0,839c682963f757a8630dd7a16d534b495d1125e7,9ad5bd207436b2b4e4849a98b23f370aebf3c23c,sys: __assert: migrate users away from __ASSERT_ON
+B131,B,0,3b04af356334dbe95042c056fe7d8b1fbc550ac4,0827b6aa72cc01bcff6c9810abb0131db522f5d2,include: zephyr: kernel: internal: Fix inline comment typo is=>if
+B132,B,0,ff6841547c0462f3506f863ddb95c87e5220d166,d78ced0f09710cc9645c969896c90b7a7c709192,kernel: obj_core: move kernel system object registration
+B133,B,0,480d0eee4546fe112ec47ba22d61ab98c04d775a,e10af2299123a09b5c1cef2212d9ea5bb95c7fea,kernel: work: deprecate `thread` field in struct k_work_q
+B134,B,0,d78ced0f09710cc9645c969896c90b7a7c709192,3a1d70f4509a9233d07e42a220ae01e7e8e8d929,kernel: obj_core: register object-type init via kernel init hook
+B135,B,0,5e40ff3654b29bc526b840499e587973ed9a5d30,1a963bba2694dc3a30457dd928ae2b5f7bed118d,kernel: timeout: fix maybe-uninitialized warning in z_add_timeout
+B136,B,0,c91e5e1390f3f71e92fe92f01c2da32ab967aa22,95bcb74aa5cd1142b86a716005b1123deb80dd57,kernel: move atomic_c.c to lib/os
+B137,B,0,8509270a0e34a7fe7075e7712b3ca31de2ccda83,1b8c7a3038d98d8dd1aaf87ee5500ce88f66638b,kernel: poll timeout: Fix race condition
+B138,B,0,b09eb8bead30b704313761594786ae836a939698,8cab85f0d4adb5dffe6f54954abcdda992175f1c,kernel: device: clear init_res on successful initialization
+B139,B,0,864ea0ea3fd3e5aacf84c83173f9f18cec3a29cc,943646a623b433cbd7dca073e2b65ce5d5f6ce1a,kernel: default SYS_CLOCK_HW_CYCLES_PER_SEC from timebase-frequency
+B140,B,0,f77f55fb16eda32ef6be97c7fb9b78e08b4f56e5,386883d9eda681967cbdb8572ad57900952d8dd6,kernel/pipe: fix swap_data corruption when k_pipe_read is called from ISR
+B141,B,0,692c2fd8254ed12d742b2782ad19f7dbd3a52e1e,74b7173e9c929cf8eed570fb3df099c5514720c0,"arch: {arm, common, sparc, x86, xtensa}: fix typo"
+B142,B,0,243012c33c979ae6f4fcc20b76238bf3ec0b4a74,c60e0e94360568efd93b5f608e8d2f07924e1542,kernel: move thread_entry from lib/os to kernel
+B143,B,0,b4f328930b33764cd355d48e081f013b296a3cd9,5c30e858ecc174c7e947d8a42ea8768f7d70c529,kernel: obj_core: unregister objects in released heap and slab memory
+B144,B,0,c082e22f06ec187085578de413cc4786a90839f8,43503a7ef1e810d1026a6b0f82bab255c43cbee7,kernel: dynamic: combine thread state checks in stack free
+B145,B,0,279f7fc17157e88f2a9ce85d8a766471900fda7d,4157903fba3a9feeadd856505889c7f6449260d1,kernel: usage: fix unused-variable warning when THREAD_USAGE_ALL=n
+B146,B,0,70df4ac429b10c6ec37b186c5921480ea51ac52d,d2536d7d3fbf1d78613f0cb961fde81bb9897a2b,arch: riscv: Add CONFIG_EXECUTE_XOR_WRITE support using PMP
+B147,B,0,1223ad1c35c18af4d467fa54e6bc29ecb8f143ce,bc7a105d659af0265218ace2423137ea547772e9,kernel: Fix unused parameter warnings
+B148,B,0,59cf34bf212eeb5c7ea88b97e15842b1e7c1a6b7,c5b4762c36bab156dbae6c5bb06688a4252b1eed,kernel: work: migrate to z_try_abort_timeout()
+B149,B,0,162b921c7d92877c6aab81a3c3ed15ada9c1c8a1,0dc139a4e0e1910b6399711cb1b239a4fc602ff4,arch: arm: Keep CONFIG_INIT_STACKS behavior consistent
+B150,B,0,32c0ba4c7ef593850e7797155c0e14456a1e4586,2dd9f5f414d3353e247f294004608e229587bd5e,"Revert ""kernel: move the sleep API declarations to their own header"""
+B151,B,0,d060186b777bbdb43da9684622601c60c2209267,42461376c779880f2c5e4ef2e55c7b888447b850,llext: export IRQ locking and cycle counter symbols
+B152,B,0,9828037e917ae295ccac24aefbcecf8bbf5f0241,51f12443361f959d0083549e87c6d4f117efa050,arch: riscv: Detach DEP config from EXECUTE_XOR_WRITE
+B153,B,0,60d6e9ac24aae6cb13a963bd43f9c4339e6849ee,803db8bdea796af9b6c1479c4e7bbb90870f7634,kernel: mmu: use overflow-free inclusive-end form for address range asserts
+B154,B,0,4a767996eb1a7d7117127a0fa75448b10e97040b,b6bfe9fc6a4ce37ddf07a114bf557c65741b1b78,kernel: mailbox code to use is_thread_dummy()
+B155,B,0,3308d069ae0c0a2888d7228b98de4e775ca05864,a0f89415f3679d6c1bfa5829eeb11843f40cfedb,kernel: name the per-CPU current thread _raw_current
+B156,B,0,34744aedc34c2d0dc0cab3d0872569bf5da689f4,ddd6ce335c8016dd5b99a26bb88d2c65b203fe09,include: fix misc typos in include/
+B157,B,0,4424aa681e0b80e9cbd0ae27a987d582be88cb74,3e5ed41fca0d2d16f2c5a423c21f1075cf016fa2,kernel: pipe: user threads may not re-init pipe
+B158,B,0,cc6136628341b99999b4e33253204765f8957473,fcb690e23e406277c1eccc4c40e049e8be43ac65,kernel: move errno from kernel to lib/libc/common
+B159,B,0,8b93109f26e69a538e96b485fb3a77eada295568,6f0188a56c2dfc6b91f03422c1502e9bd3c37a93,arch: arm: cortex_m: pend PendSV with a plain store on thread abort
+B160,B,0,a5fbcbb12cd432e8abe4a88dd7e929d4b27c8270,cadcd65b46f076cf819cb1f0b22830c07e1663a0,arch: riscv: skip ATOMIC_OPERATIONS_C if arch-specific atomics are enabled
+B161,B,0,7e9d3e3476ed2ffac6a7f2392f1052177dc27eb1,2210c0dde37d3c333d245cdcc55c04f9cd4022f0,kernel: Add RESET_ON_FATAL_ERROR kconfig option
+B162,B,0,c17b8678c6a331336c0e0a3e3a22abf8477b1c77,1c65d60a40b0765450358842d9b88ea64300bae5,include: Add support for dts RAM configuration
+B163,B,0,0b1b50fd81d31a4434e9ec378b1784c3bc8b70aa,13c6757e4adc1309aa40b446be495a77760a6ecc,kernel: mmu: update flags of each page in k_mem_update_flags()
+B164,B,0,9a27e2e135af9656dd9133fe49851d141c6f994b,ff6841547c0462f3506f863ddb95c87e5220d166,kernel: userspace: use kernel init hooks for mem domain and shmem
+B165,B,0,7fbab25aa2b97a732d655d43d4e6a924eae2ac68,778f14c1f3077dd56e4be25cc090cb5d2ea79b06,kernel: add @since and @version to thread_stack_api
+B166,B,0,6468c0769281e02185d2dc915d2514bb3069dc33,0ea1a26fed179c8747c9fb9bff6e26bc5c82931c,kernel: dynamic: fix kernel stack size overflow
+B167,B,0,ad827a78ca147064a7e093e35e1c61203c92b7b2,bb41c4460b13b7564da3ca9a2a412c75cffb2a3f,lib: libc: iar: Fix build error when IAR_LIBC enabled.
+B168,B,0,587cf2d64f666b55da5a2f1a714c8183d85e55e9,06a69ec04a2143a1c6846b992f9da5ed706086f5,kernel: pipe: bound buffer size in k_pipe_init verifier
+B169,B,0,76c0a34e3d1aecc923efdce9c2c27ad6ef6d9e5c,03e4556134cfb28c30984c86d70034c449052231,kernel: poll: Remove redundant timeout check
+B170,B,0,9fe4cc20a2b5c7ef269206bfe80b8e606e813156,89469174d2c3abb4f821eab627f0c7e06d2aa854,kernel: move boot banner into lib/os
+B171,B,0,dad5096f854e2b15454d3d1285e80167007cbabd,a7739b8cfb0006d087f918f3df1eed58cf760c49,drivers: entropy: Add support for architectural entropy drivers
+B172,B,0,465d3de8093041969ade60358257224307b82643,ef5cfd369f4a0ab3601db9a23c1da8c406cc1a72,kernel: Add k_thread_runtime_stats_is_enabled function
+B173,B,0,f4a2a270715bd1c89bb288a6b5f211e0d0e554f0,d5e99773b4fa16ac181270df9d34158fc3825092,kernel: timeout: make the system clock tick interface unsigned
+B174,B,0,046a430890908eec52f561c422e9ebef0f8dc0af,36e755caeb46cad546bb4ff1b827acae6ce2bb3c,arch: fix various typos
+B175,B,0,5f5284d518c1c5b86e6cf0f7c8abb65770ea83ec,b49637c74dd334c25fb466ce3ee869486b5cbf61,arch: arm: Report escalated non-secure SecureFaults
+B176,B,0,0da38f1f731fb8facc0bea5f19a068ca9350d829,339674057df5f6a288f44de0db683bbbd3eef2df,kernel: device: return false from device_is_ready(NULL) in user mode
+B177,B,0,360f4fb1fd52deb5debabc3fcf9099f112bfd2cf,9da75b3eabbe2f362438d2c254a11527f34f7b4b,kernel: timeout: add sys_clock_no_timeout() for the empty timeout list
+B178,B,0,8dc7a37bc75402a0a3329397887f32f5fb4da3ad,04c58a2ddbb615cdb06b50d0d7dc49d4c323ddbd,kernel: poll: z_vrfy_k_poll() to free memory
+B179,B,0,2d47a9b79ce627ec2b8c1e6f8c5e7db69ec4ed2f,6f268b69830741434a6acb7e723a71ccdf242e1d,kernel: system_work_q: register init via kernel init hook
+B180,B,0,d268ad0259edc8ec24c9dec13128ac94d47b284f,41e5c949c11b34b3452e9c876ff6a427b55f21d5,kernel: move timeout backends into kernel/timeout/
+B181,B,0,8678a37a4a804d4233abbff7ad050d21c3469a23,4bcd74122a8d9bc761a464283962ff521b08f61a,arch: arm: Fix secure Cortex-M callee register reporting
+B182,B,0,46f25cffc5ec1920232f97c6dff1601ddb824094,8fb3713d2e43576c61dbd0424bda18b718f97041,sys: printk: stop locking once a fatal error is being reported
+B183,B,0,8dbe9770901a8321f5399512ab0d8cfd1fcd87fe,d01ea12e787e410324eae5d80596227cf3274899,kernel: mailbox: emit tracing EXIT on async-send matched-receiver path
+B184,B,0,85c4346a3c7423fafafc8454cf72106c5a232c22,386f11cb8fe4475f797e223d111cb936a1233a38,kernel: mmu: fix redundantl guard page assertions
+B185,B,0,217e2913a1c0b0c1467a7f2b41d27cd6716ccd15,ed35e6d620eb8802dd5ea6b0a6789a9cfbd61d09,lib: heap: kasan: lightweight heap write sanitizer for sys_heap
+B186,B,0,388d3f465f41383e186fad4aada1dd16d1cf2908,8b17f8e207f58b9c27003f525b1d72e20b239499,arch: arm: implement llext veneer support for baseline cores
+B187,B,0,c3f2a6a07ac96b4ec643bd6400a1f43f927e418b,b90a70bc4fb2129bba442e301396062106d57d41,kernel: timeslicing: rearm with slice_size-1 when slicer just fired
+B188,B,0,5967ceb85f00055644eafbec3fce232cdb886531,ce9584adf799ae08f23a98b0c26ebe022c21ec66,kernel: init: register CPU object core via K_OBJ_TYPE_DEFINE

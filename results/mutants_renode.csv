@@ -1,0 +1,17 @@
+kind,n,op,added
+alu,4,sem.give,4.0
+alu,8,sem.give,8.0
+alu,16,sem.give,16.0
+alu,32,sem.give,32.0
+load,4,sem.give,4.0
+load,8,sem.give,8.0
+load,16,sem.give,16.0
+load,32,sem.give,32.0
+alu,4,sem.wake,4.0
+alu,8,sem.wake,8.0
+alu,16,sem.wake,16.0
+alu,32,sem.wake,32.0
+load,4,sem.wake,4.0
+load,8,sem.wake,8.0
+load,16,sem.wake,16.0
+load,32,sem.wake,32.0

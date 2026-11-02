@@ -1,0 +1,31 @@
+pair,stratum,selected,child,parent,subject
+A000,A,1,cf6d9d8fa8c93bbb117413a7a6021e63443868d9,387b387479edbd1be39c498b9194ff87d83424b1,kernel: wait_q: add z_unpend_first_thread_locked() and migrate callers
+A001,A,1,414c3cdeaf499cbbb32998759cd9821bac12be83,59cf34bf212eeb5c7ea88b97e15842b1e7c1a6b7,kernel: timeout: remove the dticks-based cancel mechanism
+A002,A,1,09a0cd7896008c6b9e09db4372ad6f91fd279fee,abfc798abd0ede89ad6f414efdc28d6561e897a9,kernel: events: honor reset for zero wait masks
+A003,A,1,23040b6b555fa69bf769b1707e2b3c3a71cedc13,9e7018846b85bfc3787338ccb57713a5c10c1d2d,kernel: Inline z_sched_wake()
+A004,A,1,f32e042fa5d22b7731d3a173a9e92ba5c12893e7,a3a341406db7e3c264c06b3f8b2ad29bb17b49ec,kernel: update the message queue ring before copying the payload
+A005,A,1,940aaaed2acc8d390e3f32439f1a83ac200bc6fb,4defbbeecd4439c96dcbd83fd2dd38b0ae75aafb,kernel: fatal: add arch hook pair for IRQ management during coredump
+A006,A,1,4b525273bf64bb07c3e067177d2f2bd3e4cd9bc1,fc11a9166eee7465381ac27433c7f8b42df3dc6a,kernel: sched: simplify thread_runq()
+A007,A,1,d7721afeaae25b851671b02135bf26d2dabd62c2,3308d069ae0c0a2888d7228b98de4e775ca05864,kernel: spinlock: pass the incoming thread to the ownership transfer
+A008,A,1,805b2af18ef458c9309a9424c2a3b2936ba6171f,1ab9ae5c14889d6cd2853bf966a0444674e8e32e,kernel: timeout: introduce z_try_abort_timeout() with in-flight tracking
+A009,A,1,669b12f804d7df717d50de88a7aaa7754215312b,bfe8a9f2989df2ad711a893bfa439c5eb922c695,kernel: sched: don't read _current back after set_current()
+A011,A,1,4d042d31032715e89299c6d52983665d213d060a,84e82eae4c738639bbde7770ea307d2ad8ef2a26,kernel: add configurable striped semaphore locking
+A012,A,1,5c30e858ecc174c7e947d8a42ea8768f7d70c529,1e1332cf7b35d7ba787b259c5b7f82e1c3045dff,kernel: obj_core: unregister objects the kernel releases
+A013,A,1,40b8ee1f11045e5c322f03f6a6369c7bb5ab710a,3c6fa908cbdd831b0b2918da853834a61eb38034,kernel: Remove redundant K_FOREVER timeout check from thread schedule
+A014,A,1,2f58de062669fb91a9fda5a89ab3b453b07623b7,8dbe9770901a8321f5399512ab0d8cfd1fcd87fe,kernel: stack: move BLOCKING trace to after K_NO_WAIT check in k_stack_pop
+A015,A,1,4c1730872548bfb054bbc8fb630ee61abcee6153,24a8c0b4830d5926b2010de4b64f4db108d8ae8d,kernel: move the SMP scheduler paths behind hooks in ksmp.h
+A016,A,1,374352fef297674ec65ef50117ba8ef303f59367,1a53affccab30fd90d16b41b71a2ac439d781b34,kernel: stack: fix allocation size overflow
+A017,A,1,c605ea46e15fb9bdd518670258a8a52d8850d8f4,b6d1d04653bd856cb6fefcf9bd7a4a75fbbde701,kernel: thread monitor - Assert reusing TCB in use
+A018,A,1,1c47cb6eb4e13088ee65624560ccf1638fbe01b2,76fdc91c5508e3d00ba53b460ba02c1947527f71,kernel: thread: factor z_setup_new_thread config blocks into helpers
+A019,A,1,69824a8eb42c4057d6b146dafd71579fe6426b4b,0f7b0ba0f1044954aa39bf848725e09553d1a23e,kernel: fix abbreviated stack safety check with stack sentinel
+A020,A,1,908169d9df4d0b9d1bc371df9bfad12ea91e5f8c,0659dc18b3bd8d3bb23c57059edddb51b7fa458f,kernel: deadline: move deadline handling to own file
+A021,A,1,c21850fdd66ea775580257cdf57259e0f3da6669,aec25bce220efe95c726d6b24bf8b0880cde9d56,arch: change arch_mem_unmap() to return an error code
+A022,A,1,2d6bdab5dc038881052ec2804e38713160782be9,729110c12fec2cf1843e39f19f88a86c7c676513,arch/riscv: fix early TLS setup and save callee-saved registers
+A023,A,1,5c6c6837cc4026a70e670c265fc4d1e3b1f16379,b04513ce96c617a63f52ecd79d5f3899461471c3,kernel: fix k_condvar_wait mutex re-acquisition on timeout
+A024,A,0,ce9584adf799ae08f23a98b0c26ebe022c21ec66,cfb9ad7d7b2e2aea02483a70efd769076f7593fc,kernel: thread: integrate object core via K_OBJ_TYPE_DEFINE
+B000,B,1,cc80daf522714c79add271c542872531e9221589,838c5408759bbc061a21cf281bb1f0f8e7d168d0,kernel: z_work_submit_to_queue() may reschedule
+B001,B,1,3d405326a7653cba6860280e45c8734f8d3fc423,01f0cea45d6fe11e085ae21de335a6f612a7f9e0,arch: arm: Forcibly set K_FP_REGS when FPU enabled
+B002,B,1,4bcd74122a8d9bc761a464283962ff521b08f61a,39ab71e612604ade423bf10c1831ff12e2e10e75,arch: arm: Fix secure Cortex-M ESF lookup
+B003,B,1,cfb9ad7d7b2e2aea02483a70efd769076f7593fc,21a9723208d25f9a4982b28f8b303518bd8ff9f6,kernel: mem_slab: integrate object core via K_OBJ_TYPE_DEFINE
+B004,B,1,e422289713c204079665413912b34472c3779743,08229332df5b285710f925703facf73e16128d0a,kernel: userspace: keep a thread in its domain when moving it fails
+B005,B,1,f5dfc4ba3e250530c076c1caa1c33ad1a1f7d2d9,ce23f1d734d53f9bfe4795692ac308e37492de44,kernel: timeslicing: migrate to z_try_abort_timeout()

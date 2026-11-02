@@ -1,0 +1,2 @@
+pair,op,delta_renode,delta_silicon,delta_code,truth_built,truth_code
+A008,heap.alloc_free,0.0,-0.029113924050632956,-0.029996842437638116,-1,-1

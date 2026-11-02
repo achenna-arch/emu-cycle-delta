@@ -1,0 +1,22 @@
+kind  n       op  added
+ alu  4 sem.give   4.00
+ alu  8 sem.give   8.00
+ alu 16 sem.give  16.00
+ alu 32 sem.give  32.00
+load  4 sem.give   5.00
+load  8 sem.give   9.00
+load 16 sem.give  17.00
+load 32 sem.give  33.00
+ alu  4 sem.wake   3.75
+ alu  8 sem.wake   7.25
+ alu 16 sem.wake  13.00
+ alu 32 sem.wake  39.50
+load  4 sem.wake   4.75
+load  8 sem.wake  10.25
+load 16 sem.wake  17.00
+load 32 sem.wake  43.50
+      op kind    slope
+sem.give  alu 1.000000
+sem.give load 1.044118
+sem.wake  alu 1.136029
+sem.wake load 1.297794

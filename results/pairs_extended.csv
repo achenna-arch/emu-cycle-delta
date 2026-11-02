@@ -1,0 +1,16 @@
+pair,stratum,selected,child,parent,subject
+A026,A,0,1e265cf776328c4c97534fd9a59b1812a2179a15,9a27e2e135af9656dd9133fe49851d141c6f994b,kernel: kheap: keep static heap init as a PRE_KERNEL_1 SYS_INIT
+A027,A,0,a811b0f1cd51f34a0f86c4a0efb60ae69addbf05,3d1e24b56b61d2de2924d9772470cec38e4d59ef,arch: arm: cortex_m: drop redundant ISBs from IRQ lock and unlock
+A031,A,0,1b8c7a3038d98d8dd1aaf87ee5500ce88f66638b,92382add7102a5d48641e95fcdfd754235b2533b,kernel: thread timeout: Fix race condition
+A033,A,0,1b60add1ac447bb0027f517d446972eedb457c89,e7ae602b5c2000f87fdb2f395c6919630f552a63,kernel: mutex: fix priority inheritance with multiple held mutexes
+A039,A,0,e2dfb5a88298e773f6b5d9a1c378046c7f0d8113,48b540ffaf16409851ce84594f12ebfd7a9fca27,kernel: kheap: honor alloc deadlines and zero-size realloc
+A040,A,0,222eba03d771c1c1f5f51028eaa21cffdfad0a1d,908169d9df4d0b9d1bc371df9bfad12ea91e5f8c,kernel: sleep: move sleep code into own file
+A046,A,0,6f268b69830741434a6acb7e723a71ccdf242e1d,7a4c19029150d469362da87183c3954deb49d40a,kernel: introduce kernel-internal init hooks
+A049,A,0,016f135c9b95e067b990b52afbcdf488252db901,414c3cdeaf499cbbb32998759cd9821bac12be83,kernel: timeout: remove the TIMEOUT_DTICKS_ABORTED sentinel
+A053,A,0,52301ff761a8f9c61f4e8379fc3f409c9de2972d,285361130e0028d2d2bb25dd2fce6f8a853f9221,kernel: Add and use z_reschedule_locked()
+A057,A,0,4e5a1c1f993227525a172581832ad33da6d19079,f37190433cdc85ea208a84ff54fc410a53e84023,kernel: sched: panic on blocking pend from ISR context
+A062,A,0,bb870f2e8fe7e2b1ca50dc377f0a9a78cb995f55,0404ca6394b4608480032e8760b243fd098f0dc4,kernel: obtain lock before queue_insert()
+A073,A,0,2ea5924943cbfd46e8903da95d66267bc2b3ce5b,222eba03d771c1c1f5f51028eaa21cffdfad0a1d,kernel: k_yield: move code to thread.c
+A078,A,0,21a19931744081588b73d374b084db271744d820,1549a652ae4625549f77f96de5eb6729d33ad3fd,kernel: stack: propagate errors from pending a pop
+A081,A,0,6f0188a56c2dfc6b91f03422c1502e9bd3c37a93,014488bbc2d549afa547fe14be48d30917b4641a,arch: arm: cortex_m: pend PendSV with a plain ICSR store
+A085,A,0,5188d5009b02d7ea8ee4891e2c8e1d2edeaf2308,e4b928ef193c82d5d80c9e02a125c67cbeed4ea3,kernel: timeout: add min-heap backend

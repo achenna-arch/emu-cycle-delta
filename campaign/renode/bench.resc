@@ -1,0 +1,17 @@
+# Runs one image and writes its UART to a file.
+# Caller sets $elf and $log.
+#
+# Renode virtual time moves in steps of 125 ns. At 8 MIPS one instruction is one
+# step, so a DWT model clocked at 8 MHz counts exactly one unit per instruction.
+# Virtual time is not meaningful here: only this count is used.
+
+$runtime ?= "60"
+
+mach create "bench"
+machine LoadPlatformDescription @platforms/cpus/nrf52840.repl
+machine LoadPlatformDescriptionFromString "dwt: Miscellaneous.DWT @ sysbus 0xE0001000 { frequency: 8000000 }"
+sysbus.cpu PerformanceInMips 8
+sysbus.uart0 CreateFileBackend $log true
+sysbus LoadELF $elf
+emulation RunFor $runtime
+quit

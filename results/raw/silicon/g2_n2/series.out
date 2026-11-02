@@ -1,0 +1,145 @@
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g1 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g2 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g3 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g5 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g6 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g7 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+smoke_g8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_alu32_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_alu32_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_alu32_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_alu32_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_load32_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_load32_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_load32_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+mut_load32_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_parent_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_parent_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_parent_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_parent_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_child_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_child_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_child_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A000_child_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_parent_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_parent_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_parent_p8 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_parent_p12 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_child_p0 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_child_p4 exit=0 lines=428 starts=4 done=4
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+
+A001_child_p8 exit=0 lines=428 starts=4 done=4
+nrf52840dk-2: forward host lookup failed: Unknown host
+
+custom-55.saclay.iot-lab.info [172.16.46.55] 20000 (?) : Connection refused
+A001_child_p12 exit=0 lines=220 starts=3 done=2
+dim. 01 nov. 2026 01:26:32 UTC

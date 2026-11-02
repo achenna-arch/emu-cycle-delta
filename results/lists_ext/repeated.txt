@@ -1,0 +1,12 @@
+A073_parent_p0
+A062_child_p4
+A049_child_p8
+A031_child_p8
+A040_parent_p0
+A073_parent_p8
+A085_parent_p0
+A053_parent_p0
+A053_parent_p12
+A033_child_p4
+A039_parent_p12
+A046_child_p12
