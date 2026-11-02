@@ -1,0 +1,26 @@
+{
+  "title": "Replication package: instruction-count deltas against cycle deltas for Zephyr kernel commits on a Cortex-M4",
+  "upload_type": "software",
+  "description": "<p>Replication package of the article <em>Blind to Layout: Do Instruction-Count Deltas Predict Cycle Deltas for RTOS Kernel Commits on a Cortex-M4?</em> (under review).</p><p>The same Zephyr kernel benchmark image runs on an nRF52840 DK board of FIT IoT-LAB, where the DWT counter gives cycles, and in Renode 1.17.0, where the same register gives executed instructions. The package holds the firmware, the scripts that select commit pairs, build images, run Renode, QEMU and the boards, the protocol with its dated amendments (in French), the parsed tables, the raw serial logs of every run, the ELF images in the images folder, and the scripts that rebuild every number, table and figure of the article.</p><p>The published ELF files have their debug sections removed; results/image_manifest.csv gives the SHA-256 of the loaded bytes of each measured image and of each published file, and the loaded bytes are identical. Code is released under the MIT License; data, logs and figures under CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Chenna, Abdelbassette",
+      "affiliation": "Université de Batna 2",
+      "orcid": "0009-0003-4671-1182"
+    }
+  ],
+  "keywords": [
+    "real-time operating systems",
+    "Zephyr",
+    "Cortex-M4",
+    "nRF52840",
+    "Renode",
+    "QEMU",
+    "instruction count",
+    "code layout",
+    "performance regression",
+    "FIT IoT-LAB"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open"
+}

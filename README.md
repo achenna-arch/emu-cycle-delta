@@ -15,8 +15,9 @@ The study runs the same Zephyr kernel benchmark image on an nRF52840 DK board of
 | `results/` | Pair lists, build failures, screening, parsed tables, image manifest |
 | `results/raw/` | Raw serial logs of every board, Renode and QEMU run |
 | `article/` | Scripts that rebuild every number, table and figure of the article from `results/` |
+| `images/` | The ELF images of the campaign, as compressed archives, with `SHA256SUMS.txt` |
 
-The ELF images are attached to the release as three archives: `elf_nrf52840.tar.gz` (board and Renode images, with their `.config`), `elf_mps2_an385.tar.gz` (QEMU control images) and `elf_first_draw.tar.gz` (the first placebo draw, archived as the protocol requires).
+The images are split into six archives: the board and Renode images of the frozen pairs (`elf_nrf52840_frozen_pairs_1` and `_2`), of the extension pairs (`elf_nrf52840_extension_pairs`) and of the controls, that is mutants, placebos and base images (`elf_nrf52840_controls`), each with its `.config`; the QEMU control images (`elf_mps2_an385`); and the first placebo draw, archived as the protocol requires (`elf_first_draw`). Release v1.0 carries the same nRF52840 images as a single archive.
 
 ## Reproducing the analysis
 
